@@ -14,7 +14,7 @@ public class Cp {
 				in = new BufferedReader(new FileReader(file1));
 				String line;
 				while ((line = in.readLine()) != null) {
-					fileText = fileText + line + "\n";
+					fileText = fileText + line + "\r\n";
 				}
 			}
 		
