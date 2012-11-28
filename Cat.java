@@ -1,8 +1,12 @@
 import java.io.*;
 public class Cat {
+/** I have an if else, AND an exception catch for the file not existing, one is enough
+wrote both just for practise
+*/
 	
 	public static void main(String[] args) {
-		File file = new File(args[0]);
+		for(int i=0 ; i < args.length ; i++) {
+			File file = new File(args[i]);
 		
 		if (file.exists()) {
 			BufferedReader in = null;
@@ -38,7 +42,11 @@ public class Cat {
 		
 		else {
 			System.out.println("This file does NOT exist");
-		}	
+		}
+			System.out.println();
+			System.out.println("End of file");
+			System.out.println();
+		}
 	}
 
 	
